@@ -1,0 +1,22 @@
+Exception on /dogclassifier [POST]
+Traceback (most recent call last):
+  File "/Users/nomanikram/Downloads/DogClassifier/Restful Api/app.py", line 42, in post
+    return 1/0, 400
+ZeroDivisionError: division by zero
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nomanikram/Downloads/DogClassifier/venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/nomanikram/Downloads/DogClassifier/venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/nomanikram/Downloads/DogClassifier/venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/Users/nomanikram/Downloads/DogClassifier/venv/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/Users/nomanikram/Downloads/DogClassifier/venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/Users/nomanikram/Downloads/DogClassifier/Restful Api/app.py", line 46, in post
+    return 1/0, 400
+ZeroDivisionError: division by zero
